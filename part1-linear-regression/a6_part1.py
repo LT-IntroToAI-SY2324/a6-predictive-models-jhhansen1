@@ -24,9 +24,11 @@ intercept = round(float(model.intercept_), 2)
 r_squared = model.score(x, y)
 
 # Print out the linear equation and r squared value
-
+print(coef, intercept, r_squared)
 # Predict the the blood pressure of someone who is 43 years old.
+prediction= model.predict([[43]]) 
 # Print out the prediction
-
+print(prediction)
 # Create the model in matplotlib and include the line of best fit
+plt.plot(x, coef*x + intercept, c="r", label="Line of Best Fit")
 plt.show()
