@@ -4,7 +4,7 @@ After completing `a6_part1.py` answer the following questions
 
 ## Questions to answer
 
-1. What is the r squared value?  What does this say about this linear regression model? The r squared value is how well the data fit the linear regression model
+1. What is the r squared value?  What does this say about this linear regression model?The value is 0.63 The r squared value is how well the data fit the linear regression model
 
 2. According to your model, what is the predicted systolic blood pressure for a person iwho is 43 years old? 137.462
 
