@@ -22,7 +22,7 @@ model = LinearRegression().fit(x, y)
 coef = round(float(model.coef_), 2)
 intercept = round(float(model.intercept_), 2)
 r_squared = model.score(x, y)
-
+print(intercept)
 # Print out the linear equation and r squared value
 print(coef, intercept, r_squared)
 # Predict the the blood pressure of someone who is 43 years old.
