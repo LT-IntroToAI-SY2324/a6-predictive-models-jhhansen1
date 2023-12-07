@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 data = pd.read_csv("part2-training-testing-data/blood_pressure_data.csv")
 x = data["Age"].values
 y = data["Blood Pressure"].values
-
+x=x.reshape(-1,1)
 # Create your training and testing datasets:
 xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size = .2)
 # Use reshape to turn the x values into 2D arrays:
@@ -26,7 +26,7 @@ intercept = round(float(model.intercept_), 2)
 
 
 # Print out the linear equation and r squared value:
-print(f"R^2 value" + r_squared )
+print( r_squared )
 
 '''
 **********TEST THE MODEL**********
@@ -39,8 +39,9 @@ prediction= model.predict(xtest)
 prediction=np.round(prediction, 2)
 
 # Test the model by looping through all of the values in the xtest dataset
+print (r_squared)
 for i in range(len(xtest)):
-    print(xtest[i[0]])
+    print(xtest[i][0])
 print("\nTesting Linear Model with Testing Data:")
 
 
