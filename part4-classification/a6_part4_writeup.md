@@ -10,5 +10,5 @@ the accuracy score of my model dropped from .85 to .65 after commenting out the 
 
 3. Looking at the predicted and actual results, how did the model do? Was there a pattern to the inputs that the model was incorrect about?
 
-4. Would a 34 year old Female who makes 56000 a year buy an SUV according to the model? Remember to scale the data before running it through the model.
+4. Would a 34 year old Female who makes 56000 a year buy an SUV according to the model? Remember to scale the data before running it through the model.She would most likely not buy the suv according to the model because when you input the data a 0 is returned meaning false
 

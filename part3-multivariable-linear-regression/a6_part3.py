@@ -21,6 +21,7 @@ prediction= model.predict(xtest)
 
 #Loop through the data and print out the predicted prices and the 
 #actual prices
+print (r_squared)
 for i in range(len(xtest)):
     print(ytest[i])
     print(prediction[i])

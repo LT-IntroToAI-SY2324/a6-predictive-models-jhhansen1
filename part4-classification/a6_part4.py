@@ -32,4 +32,8 @@ print("real Y values:")
 print(ytest)
 print("predicted Y values:")
 print(log_reg.predict(xtest))
-
+print(len(ytest))
+female_thirtyfour = [["34", "56000", "1"]]
+female_thirtyfour=scale.transform(female_thirtyfour)
+my_prediction=log_reg.predict(female_thirtyfour)
+print(my_prediction) 
