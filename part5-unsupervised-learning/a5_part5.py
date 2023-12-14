@@ -13,7 +13,7 @@ x_data=StandardScaler().fit_transform(x)
 #the value of k has been defined for you
 k = 5
 #apply the kmeans algorithm
-km=KMeans(n_clusters=k.fit(x_data))
+km=KMeans(n_clusters=k).fit(x_data)
 
 
 #get the centroid and label values
@@ -29,7 +29,7 @@ for i in range(k):
     cluster=x_data[label_values==i]
     plt.scatter(cluster[:,0], cluster[:,1])
 #plot the centroids
-plt.scatter(centroid_values[:,0], centroid_values[:,1], marker=":)", s=100, c="g", label="centroid" )
+plt.scatter(centroid_values[:,0], centroid_values[:,1], marker='x', s=100, c='r', label='centroid' )
             
 #shows the graph
 plt.xlabel("Annual Income")
